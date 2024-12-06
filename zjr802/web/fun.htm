@@ -1,0 +1,112 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+<title>HaveFun</title>
+	<style>
+		#myvideo
+		{
+			position:fixed;
+			right:0;
+			bottom:0;
+			min-height: 100%;
+			min-width: 100%;
+			z-index:-5;				
+		}
+		@keyframes color-change-ani
+		{
+			0%{
+				color:blueviolet;
+			}
+			20%
+			{
+				color:#F35EE1;
+			}
+			40%
+			{
+				color:#C884B4;
+			}
+			60%
+			{
+				color:#8C6381;
+			}
+			80%
+			{
+				color:#2E232B;
+			}
+			100%
+			{
+				color:#7B1C69;
+			}
+		}
+		.color-change-animation
+		{
+			animation: color-change-ani 4s infinite;
+		}
+		a
+		{
+			color:yellow;
+			position:relative;
+			top:-140px;
+			left:15px;
+			font-size:20px;
+			text-decoration:none;
+			
+		}
+
+    </style>
+</head>
+
+<body>
+	<video   muted="muted" autoplay = "auto" loop="loop" id="myvideo">
+		<source src="../flash/117552-712236999_tiny.mp4">
+	</video>
+	<p align="center" class="color-change-animation" style="font-family: Constantia, 'Lucida Bright', 'DejaVu Serif', Georgia, serif; font-size: 50px;" >Let's Have Fun !</p>
+	<a href = ../>返回寝室主页</a>
+	<br>
+	<br>
+	<a href="../index.htm" >返回我的首页</a>
+	
+	<div align="center">
+		<details>
+			<summary style="position:relative;right:520px;top:-70px;font-size:33px;color:#1099ED;">bilibili</summary>
+			<iframe src="https://www.bilibili.com/" width="1300" height="650" ></iframe>	
+		</details>
+		<br>
+		<br>
+		<br>
+		<details>
+			<summary style="position:relative;right:528px;top:-60px;font-size:33px;color:#1099ED;">4399</summary>
+			<iframe src="https://www.4399.com/" width="1300" height="650" ></iframe>	
+		</details>
+		<br>
+		<br>
+		<br>
+		<details>
+			<summary style="position:relative;right:444px;top:-60px;font-size:33px;color:#1099ED;">T-Rex Dinosaur</summary>
+			<iframe src="https://chromedino.com/" width="1300" height="650" ></iframe>	
+		</details>
+	</div>
+	<audio id = "myAudio" src="../flash/Alan Walker _ Iselin Solheim - Faded.mp3"> </audio>
+	<div>
+		<button onclick = "playSong()" style = "position:relative;left:1200px;top:-450px">
+			<img src="../images/songplay.png" alt = "来首歌吧">
+			</button>	
+	</div>
+	<div>
+		<button onclick = "pauseSong()" style = "position:relative;left:1400px;top:-518px">
+			<img src="../images/songpause.png" alt = "暂停播放">
+			</button>
+	</div>
+	<script>
+		      function playSong() {
+           var audio = document.getElementById('myAudio');
+           audio.play();
+         }
+		         function pauseSong() {
+           var audio = document.getElementById('myAudio');
+           audio.pause();
+         }
+	</script>
+</body>
+</html>
